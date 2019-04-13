@@ -15,7 +15,10 @@ class Goals(models.Model):
       return self.question_text
 class Choices(models.Model):
   question = models.ForeignKey(Goals, on_delete=models.CASCADE)
-  choice_bool = models.BooleanField(False)
+  budget   = models.FloatField(default=1000)
+  hal      = models.BooleanField(False) 
+  
+  
   def __str__(self):
-      return self.choice_bool
+      return self.budget
 

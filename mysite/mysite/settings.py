@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'budget.apps.BudgetConfig',
     'goals.apps.GoalsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
